@@ -26,6 +26,10 @@ body, html {
 
 h1 {
   margin-bottom: 1rem;
+  color: #000000; /* Change to any color you like */
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url('assets/img/download.jpg') 30 round; /* Replace with your image path */
 }
 
 input#placeholderInput {
@@ -50,7 +54,7 @@ input#placeholderInput:focus {
 }
 
 .box {
-  background: #fff;
+  background: #bef3fa;
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
