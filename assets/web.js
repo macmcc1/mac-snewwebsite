@@ -1,6 +1,8 @@
-document.querySelectorAll('a[target="_blank"]').forEach(link => {
+document.querySelectorAll('a[href^="http"]').forEach(link => {
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
   link.addEventListener('click', () => {
     console.log(`Opening ${link.href}`);
-    // No need for preventDefault or window.open
   });
 });
+
